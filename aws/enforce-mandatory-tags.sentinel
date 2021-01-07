@@ -16,7 +16,7 @@ mandatory_tags = [
 allowable_ami_ids = [
   "ami-0bbf2c4f0b9b24139",
   "ami-035c845062830cd63",
-  "ami-03b5d9a16d1261864"
+  "ami-03b5d9a16d1261864",
  ]
 
 # Get all EC2 instances
