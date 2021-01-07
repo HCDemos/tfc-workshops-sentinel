@@ -1,4 +1,5 @@
-policy "enforce-mandatory-tags" {
+#policy "enforce-mandatory-tags" {
+policy "enforce-aws-ami-id" {
     enforcement_level = "hard-mandatory"
 }
 
