@@ -1,5 +1,5 @@
 # This policy uses the Sentinel tfplan import to require that all EC2 instances
-# have all mandatory tags.
+# use ops approved amazon machine images
 # Note that the comparison is case-sensitive since AWS tags are case-sensitive.
 
 # Import common-functions/tfplan-functions/tfplan-functions.sentinel
