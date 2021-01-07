@@ -26,7 +26,7 @@ allEC2Instances = plan.find_resources("aws_instance")
 # Warnings will be printed for all violations since the last parameter is true
 #iolatingEC2Instances = plan.filter_attribute_not_contains_list(allEC2Instances,
 #                        "tags", mandatory_tags, true)
-violatingEC2Instances = plan.filter_attribute_not_contains_list(allEC2Instances,
+violatingEC2Instances = plan.filter_attribute_not_in_list(allEC2Instances,
                         "ami_id_value", allowable_ami_ids, true)
 
 # Main rule
