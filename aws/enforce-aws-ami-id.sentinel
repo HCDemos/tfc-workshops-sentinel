@@ -17,6 +17,7 @@ allowable_ami_ids = [
   "ami-0bbf2c4f0b9b24139",
   "ami-035c845062830cd63",
   "ami-03b5d9a16d1261864",
+  "ami-0ca5c3bd5a268e7db",
  ]
 
 # Get all EC2 instances
@@ -32,4 +33,9 @@ violatingEC2Instances = plan.filter_attribute_not_in_list(allEC2Instances,
 # Main rule
 main = rule {
   length(violatingEC2Instances["messages"]) is 0
+}
+
+# 2nd Main rule
+main2 = rule {
+  length(violatingEC2InstancesTags["messages"]) is 0
 }
